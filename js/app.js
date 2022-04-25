@@ -1,6 +1,7 @@
 (function() {
   const myQuestions = [
     { 
+      food: "Images/salad.png",
       question: "These three simple ingredients make one of the healthiest and tastiest salads. What do you get with basil, tomato, and mozzarella?",
       answers: {
         a: "Greek salad",
@@ -10,6 +11,7 @@
       correctAnswer: "b"
     },
     {
+      food: "Images/Winner.png",
       question: "A balanced breakfast is the key to a good day! What is made from an English muffin, poached egg, bacon, and Hollandaise sauce?",
       answers: {
         a: "Burguer",
@@ -19,6 +21,7 @@
       correctAnswer: "b"
     },
     {
+      food: "Images/grapes.png",
       question: "This meal can come with many more ingredients.But at its simplest, it includes a large tortilla, cheese, salsa, and maybe some chichen.",
       answers: {
         a: "Burritos",
@@ -30,17 +33,17 @@
   ];
 
   function buildQuiz() {
-    // we'll need a place to store the HTML output
+    // Place to store the HTML output
     const output = [];
 
-    // for each question...
+    // for each question
     myQuestions.forEach((currentQuestion, questionNumber) => {
-      // we'll want to store the list of answer choices
+      // Store the list of answer choices
       const answers = [];
 
-      // and for each available answer...
+      // For each available answer
       for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
+        // HTML radio button
         answers.push(
           `<label>
                <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -50,7 +53,7 @@
         );
       }
 
-      // add this question and its answers to the output
+      // Question and its answers added to the output
       output.push(
         `<div class="slide">
              <div class="question"> ${currentQuestion.question} </div>
@@ -59,39 +62,39 @@
       );
     });
 
-    // finally combine our output list into one string of HTML and put it on the page
+    // Output list combined into one string of HTML
     quizContainer.innerHTML = output.join("");
   }
 
   function showResults() {
-    // gather answer containers from our quiz
+    // Answer containers from quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // keep track of user's answers
+    // Track of user's answers
     let numCorrect = 0;
 
-    // for each question...
+    // For each question
     myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
+      // Selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      // if answer is correct
+      // If answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
+        // Add number of correct answers
         numCorrect++;
 
-        // color the answers green
+        // Color the answers green
         answerContainers[questionNumber].style.color = "lightgreen";
       } else {
-        // if answer is wrong or blank
-        // color the answers red
+        // If answer is wrong or blank
+        // Color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
     });
 
-    // show number of correct answers out of total
+    // Number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   }
 
@@ -127,7 +130,7 @@
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
-  // display quiz right away
+  // Quiz display
   buildQuiz();
 
   const previousButton = document.getElementById("previous");
@@ -137,8 +140,10 @@
 
   showSlide(0);
 
-  // on submit, show results
+  // On submit, show results
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
+
+
