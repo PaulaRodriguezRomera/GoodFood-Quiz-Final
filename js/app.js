@@ -20,7 +20,7 @@
         c: "Scottish breakfast",
       },
       correctAnswer: "b", 
-      img: "Images/Food/eggsbenedict.jpeg",
+      img: "/Images/Food/eggsbenedict.jpeg",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@
         c: "Quesadillas",
       },
       correctAnswer: "c", 
-      img: "Images/Food/quesadillas.jpeg",
+      img: "/Images/Food/quesadillas.jpeg",
     },
   ];
 
