@@ -1,7 +1,6 @@
 (function() {
   const myQuestions = [
     { 
-      food: "Images/salad.png",
       question: "These three simple ingredients make one of the healthiest and tastiest salads. What do you get with basil, tomato, and mozzarella?",
       answers: {
         a: "Greek salad",
@@ -11,7 +10,7 @@
       correctAnswer: "b"
     },
     {
-      food: "Images/Winner.png",
+      
       question: "A balanced breakfast is the key to a good day! What is made from an English muffin, poached egg, bacon, and Hollandaise sauce?",
       answers: {
         a: "Burguer",
@@ -21,7 +20,7 @@
       correctAnswer: "b"
     },
     {
-      food: "Images/grapes.png",
+      
       question: "This meal can come with many more ingredients.But at its simplest, it includes a large tortilla, cheese, salsa, and maybe some chichen.",
       answers: {
         a: "Burritos",
