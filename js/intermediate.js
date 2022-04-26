@@ -9,7 +9,7 @@
         c: "Soup",
       },
       correctAnswer: "a", 
-      img: "/Images/Food/frenchtoast.jpeg",
+      img: "./Images/food/frenchtoast.jpeg",
     },
 
     {
@@ -21,7 +21,7 @@
         c: "Focaccia",
       },
       correctAnswer: "a", 
-      img: "/Images/Food/bruscheta.jpeg",
+      img: "./Images/food/bruscheta.jpeg",
     },
 
     {
@@ -33,7 +33,7 @@
         c: "Mexican sauce",
       },
       correctAnswer: "b", 
-      img: "/Images/Food/guacamole.jpeg",
+      img: "./Images/food/guacamole.jpeg",
     },
   ];
 
