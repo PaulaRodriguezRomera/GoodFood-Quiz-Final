@@ -1,33 +1,37 @@
 (function() {
   const myQuestions = [
     { 
+      id: 1,
       question: "These three simple ingredients make one of the healthiest and tastiest salads. What do you get with basil, tomato, and mozzarella?",
       answers: {
         a: "Greek salad",
         b: "Caprese salad",
         c: "Summer salad",
       },
-      correctAnswer: "b"
+      correctAnswer: "b", 
+      img: "../Images/Winner.png",
     },
     {
-      
+      id: 2,
       question: "A balanced breakfast is the key to a good day! What is made from an English muffin, poached egg, bacon, and Hollandaise sauce?",
       answers: {
         a: "Burguer",
         b: "Eggs benedict",
         c: "Scottish breakfast",
       },
-      correctAnswer: "b"
+      correctAnswer: "b", 
+      img: "../Images/Winner.png",
     },
     {
-      
+      id: 3,
       question: "This meal can come with many more ingredients.But at its simplest, it includes a large tortilla, cheese, salsa, and maybe some chichen.",
       answers: {
         a: "Burritos",
         b: "Wrap",
         c: "Quesadillas",
       },
-      correctAnswer: "c"
+      correctAnswer: "c", 
+      img: "../Images/Winner.png",
     },
   ];
 
@@ -55,8 +59,12 @@
       // Question and its answers added to the output
       output.push(
         `<div class="slide">
-             <div class="question"> ${currentQuestion.question} </div>
-             <div class="answers"> ${answers.join("")} </div>
+            <div class="id">${currentQuestion.id}</div>
+            <div id="img"> <img src="${
+              currentQuestion.img
+            }" alt="food image" width="100" height="100"/></div>
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
            </div>`
       );
     });
