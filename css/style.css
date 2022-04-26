@@ -74,7 +74,7 @@ body {
   background: #7AA08B;
   margin-left:7%;
   margin-right: 7%;
-  padding-bottom: 22%;
+  padding-bottom: 25%;
   margin-bottom: auto;
   text-align: center;
   line-height: 195%;
@@ -94,6 +94,12 @@ body {
   border: 3px solid #30734C;
   color:#30734C;
   text-align: center;
+}
+
+.slide #img img {
+  border-radius: 15%;
+  margin-bottom: 3%;
+  margin-top: 2%;
 }
 
 
