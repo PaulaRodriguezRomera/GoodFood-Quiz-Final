@@ -65,7 +65,7 @@
           <div class="id">${currentQuestion.id}</div>
           <div id="img"> <img src="${
             currentQuestion.img
-          }" alt="food image" width="100" height="100"/></div>
+          }" alt="food image" width="200" height="200"/></div>
           <div class="question"> ${currentQuestion.question} </div>
           <div class="answers"> ${answers.join("")} </div>
          </div>`

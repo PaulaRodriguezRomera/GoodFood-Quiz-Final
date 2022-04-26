@@ -2,7 +2,7 @@
   const myQuestions = [
     {
       id: 7,
-      question: "Very popular snack made from fried dough pastry, cut into sausage shapes and doused in sugar. They are a favourite at fiestas, or street parties, when they are sold by roadside vendors. Dipping them in hot melted chocolate is pretty much the law.",
+      question: "Very popular snack made from fried dough pastry, cut into sausage shapes and doused in sugar. Dipping them in hot melted chocolate is pretty much the law.",
       answers: {
         a: "German sausages",
         b: "Churros",
@@ -76,7 +76,7 @@
           <div class="id">${currentQuestion.id}</div>
           <div id="img"> <img src="${
             currentQuestion.img
-          }" alt="food image" width="100" height="100"/></div>
+          }" alt="food image" width="200" height="200"/></div>
           <div class="question"> ${currentQuestion.question} </div>
           <div class="answers"> ${answers.join("")} </div>
          </div>`
