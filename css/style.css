@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Quicksand";
   color: black;
   font-weight: 300;
   background-color: #30734C;
@@ -40,7 +41,7 @@ body {
 .item3 {
   grid-column-start: 2;
   grid-column-end: 5;
-  margin-top: 20%;
+  margin-top: 30%;
   text-align: center;
 }
 
@@ -73,7 +74,7 @@ body {
   background: #7AA08B;
   margin-left:7%;
   margin-right: 7%;
-  padding-bottom: 20%;
+  padding-bottom: 22%;
   margin-bottom: auto;
   text-align: center;
   line-height: 195%;
@@ -81,11 +82,25 @@ body {
   border-color: black;
   border-style: solid;
 }
+.id {
+  font-size: 50px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  margin-left: 45%;
+  margin-top: 2%;
+  background: #fff;
+  border: 3px solid #30734C;
+  color:#30734C;
+  text-align: center;
+}
+
 
 .question {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 18px;
-  padding-top: 10%;
+  margin-top: -3%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -150,7 +165,7 @@ button:hover {
 }
 .quiz-container {
   position: relative;
-  height: 200px;
+  height: 300px;
   margin-top: 40px;
 }
 
@@ -174,40 +189,6 @@ button:hover {
   padding: 10px; 
   flex: 1 100%; 
 }
-
-/* DESKTOPS*/
-@media all and (min-width: 1024px) {
-  .img_container img {
-   min-width: 80%;
-   max-width: 100%; 
-  }
-}
-
-/*TABLETS*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  .img_container img {
-    min-width: 80%;
-    max-width: 100%; 
-   }
-   .img_container .start-button {
-     width: 80px;
-     right:  55%;
-   }
-}
-
-/*MOBILES*/
-@media screen and (max-width: 640px){
-  .img_container img {
-    min-width: 80%;
-    max-width: 100%; 
-   }
-
-   .img_container .start-button {
-    width: 55px;
-    right:  55%;
-  }
-}
-
  
 .img_container {
   position:relative;
@@ -253,3 +234,40 @@ button:hover {
   padding-top: 50%;
   position: relative;
  }
+
+
+
+ /*MEDIA DISPLAYS*/
+
+ /* DESKTOPS*/
+@media all and (min-width: 1024px) {
+  .img_container img {
+   min-width: 80%;
+   max-width: 100%; 
+  }
+}
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .img_container img {
+    min-width: 80%;
+    max-width: 100%; 
+   }
+   .img_container .start-button {
+     width: 80px;
+     right:  55%;
+   }
+}
+
+/*MOBILES*/
+@media screen and (max-width: 640px){
+  .img_container img {
+    min-width: 80%;
+    max-width: 100%; 
+   }
+
+   .img_container .start-button {
+    width: 55px;
+    right:  55%;
+  }
+}
