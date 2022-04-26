@@ -9,7 +9,7 @@
         c: "Summer salad",
       },
       correctAnswer: "b", 
-      img: "Images/Food/capresesalad.jpeg",
+      img: "/Images/Food/capresesalad.jpeg",
     },
     {
       id: 2,
