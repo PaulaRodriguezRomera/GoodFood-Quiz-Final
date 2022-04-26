@@ -7,19 +7,7 @@ body {
 }
 
 
-
-/*SETTING THE DISPLAY TO FLEX*/
-/*
-.wrapper {
-  display: flex;
-  flex-flow:row wrap; 
-}
-
-.wrapper > * {
-  padding: 10px; 
-  flex: 1 100%; 
-}
-*/
+/*SETTING THE DISPLAY TO GRID LAYOUT FOR MOST PAGES*/
 
 .grid-container{
   display: grid;
@@ -66,18 +54,7 @@ body {
   grid-column-end: 2;
 }
 
-/*
-@media all and (min-width:600px) {
-  .aside {flex: 1 0 0;}
-  
-}
 
-@media all and (min-width: 800px) {
-  .quiz-container {flex: 3; }
-  .quiz-container {order: 2;}
-  .aside-1 {order: 1;}
-  .aside-2 { order: 3;}
-}*/
 
 /*SETTING THE HEADER*/ 
 .header {
@@ -185,29 +162,70 @@ button:hover {
 }
 
 /*START PAGE*/
+
+/*SETTING THE DISPLAY TO FLEX START PAGE*/
+
+.wrapper {
+  display: flex;
+  flex-flow:row wrap; 
+}
+
+.wrapper > * {
+  padding: 10px; 
+  flex: 1 100%; 
+}
+
+/* DESKTOPS*/
+@media all and (min-width: 1024px) {
+  .img_container img {
+   min-width: 80%;
+   max-width: 100%; 
+  }
+}
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .img_container img {
+    min-width: 80%;
+    max-width: 100%; 
+   }
+   .img_container .start-button {
+     width: 80px;
+     right:  55%;
+   }
+}
+
+/*MOBILES*/
+@media screen and (max-width: 640px){
+  .img_container img {
+    min-width: 80%;
+    max-width: 100%; 
+   }
+
+   .img_container .start-button {
+    width: 55px;
+    right:  55%;
+  }
+}
+
  
 .img_container {
   position:relative;
   display:inline-block;
   text-align:center;
-  grid-column-start: 2;
-  grid-column-end: 5;
   padding-left: 8%;
-}
-
-.start-container {
-  grid-column-start: 2;
-  grid-column-end: 5;
+  width: 85%;
+  height: 85%;
 }
 
 .start-button {
   position:absolute;
-  top: 70%;
+  top: 60%;
   bottom:50%;
   right:50%;
   width: 100px;
   height:40px;
-  margin:0px -50px -15px 0px;
+  margin:0px -100px -15px 0px;
   background-color: #f8f6f0;
 }
 
