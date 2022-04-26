@@ -9,7 +9,7 @@
         c: "Mozzarella sticks",
       },
       correctAnswer: "b", 
-      img: "../Images/Winner.png",
+      img: "../Images/Food/churros.jpeg",
     },
 
     {
@@ -21,7 +21,7 @@
         c: "Tomato soup'",
       },
       correctAnswer: "a", 
-      img: "../Images/Winner.png",
+      img: "../Images/Food/chilliconcarne.jpeg",
     },
 
     {
@@ -33,7 +33,7 @@
         c: "Apple Pie",
       },
       correctAnswer: "b", 
-      img: "../Images/Winner.png",
+      img: "../Images/Food/cremebrule.jpeg",
     },
 
     {
@@ -45,7 +45,7 @@
         c: "Shortbread",
       },
       correctAnswer: "b", 
-      img: "../Images/Winner.png",
+      img: "../Images/Food/cranachan.jpeg",
     },
   ];
   function buildQuiz() {
