@@ -45,7 +45,7 @@
         c: "Shortbread",
       },
       correctAnswer: "b", 
-      img: "./Images/Food/cranachan.jpeg",
+      img: "./Images/Food/cremebrule.jpeg",
     },
   ];
   function buildQuiz() {
