@@ -9,7 +9,7 @@
         c: "Summer salad",
       },
       correctAnswer: "b", 
-      img: "./Images/food/capresesalad.jpeg",
+      img: "./Images/Food/capresesalad.jpeg",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@
         c: "Scottish breakfast",
       },
       correctAnswer: "b", 
-      img: "./Images/food/eggsbenedict.jpeg",
+      img: "./Images/Food/eggsbenedict.jpeg",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@
         c: "Quesadillas",
       },
       correctAnswer: "c", 
-      img: "./Images/food/quesadillas.jpeg",
+      img: "./Images/Food/quesadillas.jpeg",
     },
   ];
 
